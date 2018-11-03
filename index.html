@@ -1,13 +1,114 @@
 
 <!DOCTYPE html>
 <html lang="en-us">
+<script>
+
+    function showAboutMe(){
+
+        document.getElementById("aboutme").style.display = "block";
+        document.getElementById("portfolioZone").style.display = "none";
+        document.getElementById("contactZone").style.display = "none";
+
+    }
+
+    function showPortfolio(){
+
+        document.getElementById("aboutme").style.display = "none";
+        document.getElementById("portfolioZone").style.display = "block";
+        document.getElementById("contactZone").style.display = "none";
+
+    }   
+
+    function showContact(){
+
+        document.getElementById("aboutme").style.display = "none";
+        document.getElementById("portfolioZone").style.display = "none";
+        document.getElementById("contactZone").style.display = "block";
+
+    }
+
+
+</script>
 
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
   <head>
+    <nav>
+        
+        <h1 id = "Name">Derek Ammerlaan</h1>
+
+        <button type = "button" class = "contact" onclick="showContact()" >Contact</button> 
+        <button type = "button" class = "portfolio" onclick="showPortfolio()">Portfolio</button> 
+        <button type = "button" class = "about" onclick="showAboutMe()" >About</button>    
+
+    </nav>
 
   </head>
+
   <body>
+
+    <section>
+
+            <div id = "contactZone">
+
+                <div class = "contactbox">
+                    
+                <h3>Contact</h3>
+                Name:
+                <input id = "nameBox" type = "text" name = "name" value = "Bobby">    
+                
+                Email:
+                <input id = "emailBox" type = "text" name = "email" value = "bobby@bobby.bob">
+
+                Message:
+                <input id = "msgBox" type = "text" name = "message" value = "hey">
+                    
+                </div>
+                    
+            </div>
+
+            <div id = "portfolioZone">
+
+                    <div class = "portfoliobox">
+                        
+                    <h3>Portfolio</h3>
+                    <hr>
+                        
+                        
+                        
+                    </div>
+                        
+            </div>
+
+        <div id = "aboutme">
+         <div class = "whiteBox">
+
+            <h3>About Me</h3>
+            <hr>
+            <img src = "assets/images/Hey.jpg" alt = "cat man">
+            <p class = "left">I am currently 18 years old, and I was born on July 11th, 2000. I have a family of six people that consists of two brothers, a sister,
+                and my mother and father. Both my brothers are older than me, the second oldest brother attends Kettering University for engineering and the other 
+                owns a mechanic business with his friends.
+            </p>
+
+            <p Class = "left">Coding has been one of my hobbies since middleschool since I never used to be funny back then I just stayed home and studied and coded
+                on my computer. In highschool I took all of the classes that included coding including AP Java and even tried out my school's tech internship
+                they were implementing for students that were interested in such a career path. The internship just required to develop an application that you thought
+                would be useful to the school.
+            </p>
+
+            <p class = "left">I have studied many languages by myself, such as c++, c+, java before I took the class, lua, python, and a couple more outside of classes.
+                Coding is one of the only things that sparks my interests and can keep my attention for more than a minute, in fact it can keep my attention for hours
+                at a time, which comes in very handy for writing big chunks and programs.
+            </p>
+
+
+         </div>
+        <div>
+
+    </section>
+
+
 
   </body>
 
