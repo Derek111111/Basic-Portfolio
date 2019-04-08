@@ -1,45 +1,17 @@
 
 <!DOCTYPE html>
 <html lang="en-us">
-<script>
-
-    function showAboutMe(){
-
-        document.getElementById("aboutme").style.display = "block";
-        document.getElementById("portfolioZone").style.display = "none";
-        document.getElementById("contactZone").style.display = "none";
-
-    }
-
-    function showPortfolio(){
-
-        document.getElementById("aboutme").style.display = "none";
-        document.getElementById("portfolioZone").style.display = "block";
-        document.getElementById("contactZone").style.display = "none";
-
-    }   
-
-    function showContact(){
-
-        document.getElementById("aboutme").style.display = "none";
-        document.getElementById("portfolioZone").style.display = "none";
-        document.getElementById("contactZone").style.display = "block";
-
-    }
-
-
-</script>
-
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
   <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <nav>
         
         <h1 id = "Name">Derek Ammerlaan</h1>
 
-        <button type = "button" class = "contact" onclick="showContact()" >Contact</button> 
-        <button type = "button" class = "portfolio" onclick="showPortfolio()">Portfolio</button> 
-        <button type = "button" class = "about" onclick="showAboutMe()" >About</button>    
+        <button type = "button" data-area="contactZone" class = "contact showAreaButton"  >Contact</button> 
+        <button type = "button" data-area="portfolioZone" class = "portfolio showAreaButton" >Portfolio</button> 
+        <button type = "button" data-area="aboutme" class = "about showAreaButton" >About</button>    
 
     </nav>
 
@@ -49,68 +21,77 @@
 
     <section>
 
-            <div id = "contactZone">
+            <div id = "contactZone" class="showArea">
 
                 <div class = "contactbox">
                     
                 <h3>Contact</h3>
-                Name:
-                <input id = "nameBox" type = "text" name = "name" value = "Bobby">    
-                
-                Email:
-                <input id = "emailBox" type = "text" name = "email" value = "bobby@bobby.bob">
-
-                Message:
-                <input id = "msgBox" type = "text" name = "message" value = "hey">
-                
-                <button type = "button" class = "submit">Submit</button>
+                <hr>
+                    <p>Email: <strong>dammerlaan@hotmail.com</strong></p>
                 </div>
                     
             </div>
 
-            <div id = "portfolioZone">
+            <div id = "portfolioZone" class="showArea">
 
                     <div class = "portfoliobox">
                         
                     <h3>Portfolio</h3>
                     <hr>
                         
-                        
+                      <ul class="portfolioList">
+                          <li class="portfolioItem">
+                           <p>Project Title: <strong>SoundWave</strong> </p> 
+                           <p>Project Github Repo: <a href="https://github.com/Derek111111/Sound-Wave" target="_blank">https://github.com/Derek111111/Sound-Wave</a></p> 
+                           <p>Deployed Link: <a href="https://derek111111.github.io/Sound-Wave/"target="_blank">https://derek111111.github.io/Sound-Wave/</a></p> 
+                          </li>
+                      </ul>  
+
+                      <ul class="portfolioList">
+                        <li class="portfolioItem">
+                         <p>Project Title: <strong>BET</strong> </p> 
+                         <p>Project Github Repo: <a href="https://github.com/Derek111111/BET" target="_blank">https://github.com/Derek111111/BET</a></p> 
+                         <p>Deployed Link :<a href="https://pure-springs-15837.herokuapp.com/" target="_blank">https://pure-springs-15837.herokuapp.com/</a></p> 
+                        </li>
+                    </ul>  
                         
                     </div>
                         
             </div>
 
-        <div id = "aboutme">
+        <div id = "aboutme" class="showArea">
          <div class = "whiteBox">
 
             <h3>About Me</h3>
             <hr>
-            <img src = "assets/images/Hey.jpg" alt = "cat man">
-            <p class = "left">I am currently 18 years old, and I was born on July 11th, 2000. I have a family of six people that consists of two brothers, a sister,
+            <img class="small-pad" src = "assets/images/Hey.jpg" alt = "cat man">
+            <p class = "left info-chunk">I am currently 18 years old, and I was born on July 11th, 2000. I have a family of six people that consists of two brothers, a sister,
                 and my mother and father. Both my brothers are older than me, the second oldest brother attends Kettering University for engineering and the other 
                 owns a mechanic business with his friends.
             </p>
 
-            <p Class = "left">Coding has been one of my hobbies since middleschool since I never used to be funny back then I just stayed home and studied and coded
+            <p Class = "left info-chunk">Coding has been one of my hobbies since middleschool since I never used to be funny back then I just stayed home and studied and coded
                 on my computer. In highschool I took all of the classes that included coding including AP Java and even tried out my school's tech internship
                 they were implementing for students that were interested in such a career path. The internship just required to develop an application that you thought
                 would be useful to the school.
             </p>
 
-            <p class = "left">I have studied many languages by myself, such as c++, c+, java before I took the class, lua, python, and a couple more outside of classes.
+            <p class = "left info-chunk">I have studied many languages by myself, such as c++, c+, java before I took the class, lua, python, and a couple more outside of classes.
                 Coding is one of the only things that sparks my interests and can keep my attention for more than a minute, in fact it can keep my attention for hours
-                at a time, which comes in very handy for writing big chunks and programs.
+                at a time, which comes in very handy for writing big chunks of applications and programs.
             </p>
 
-
+            <p class="info-link">Github profile: <a target="_blank" href="https://github.com/Derek111111">https://github.com/Derek111111</a></p>
+            <p class="left info-link">LinkedIn profile: <a target="_blank" href="">N/A</a></p>
+            <p class="left info-link">Resume PDF: <a target="_blank" href="">N/A</a></p>
+            
          </div>
         <div>
 
     </section>
 
 
-
+    <script src="assets/js/index.js"></script>
   </body>
 
 </html>

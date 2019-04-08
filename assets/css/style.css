@@ -31,7 +31,7 @@ nav{
 .about{
 
     height:50%;
-    width: 5%;
+    width: 50px;
     background-color:grey;
     border: none;
     text-align: center;
@@ -49,7 +49,7 @@ nav{
 .portfolio{
 
     height:50%;
-    width: 5%;
+    width: 65px;
     background-color:grey;
     border: none;
     text-align: center;
@@ -67,7 +67,7 @@ nav{
 .contact{
 
     height:50%;
-    width: 5%;
+    width: 65px;
     background-color:grey;
     border: none;
     text-align: center;
@@ -87,9 +87,10 @@ section{
 position: relative;
 clear:both;
 width: 90%;
-height: 500px;
+height:750px;
+padding:30px;
 left: 5%;
-background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/gravel.png)
+background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/gravel.png);
 
 }
 
@@ -97,17 +98,18 @@ background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/g
 
 position: absolute;
 width: 75%;
-height: 400px;
 background-color:white;
+padding: 15px;
+overflow:overlay;
 left: 12.5%;
-top: 50px;
+top: 25px;
 
 }
 
 h3{
 
 font-size: 40px;
-color:turquoise;
+color:rgb(22, 124, 107);
 padding: 1% 5% 0%;
 
 }
@@ -125,7 +127,7 @@ img{
 
     position: absolute;
     width: 50%;
-    height: 450px;
+    padding:15px;
     background-color:white;
     left: 25%;
     top: 25px;
@@ -136,10 +138,9 @@ img{
 
     position: absolute;
     width: 60%;
-    height: 500px;
     background-color:white;
     left: 25%;
-    top: 0px;
+    top: 25px;
 
 }
 
@@ -188,5 +189,55 @@ img{
     border-radius: 8%;
     margin: 3% 1%;
 
+
+}
+
+.portfolioItem{
+
+    font-size: 25px;
+    background-color:rgba(22, 124, 107,0.25);
+    padding: 5px;
+    white-space: normal;
+    overflow:scroll;
+
+}
+.small-pad{
+
+    padding: 5px;
+
+}
+
+.info-chunk{
+
+    font-size: 20px;
+
+}
+
+.info-link{
+
+    font-size: 15px;
+
+}
+
+@media only screen and (max-width: 600px){
+
+    #Name{
+
+        font-size: 20px;
+        left: 3%;
+
+    }
+
+    .whiteBox{
+
+        height: 740px;
+        overflow:overlay;
+        white-space: normal;
+
+    }
+
+    .contactBox{
+        width: 300px;
+    }
 
 }
