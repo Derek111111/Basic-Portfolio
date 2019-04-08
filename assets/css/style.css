@@ -137,9 +137,9 @@ img{
 .portfoliobox{
 
     position: absolute;
-    width: 60%;
+    width: 75%;
     background-color:white;
-    left: 25%;
+    left: 12.5%;
     top: 25px;
 
 }
@@ -197,8 +197,6 @@ img{
     font-size: 25px;
     background-color:rgba(22, 124, 107,0.25);
     padding: 5px;
-    white-space: normal;
-    overflow:scroll;
 
 }
 .small-pad{
@@ -223,21 +221,43 @@ img{
 
     #Name{
 
-        font-size: 20px;
-        left: 3%;
+        font-size: 15px;
+        left: 1%;
+
+    
+    }
+    section{
+
+        width: 100%;
 
     }
 
     .whiteBox{
 
-        height: 740px;
-        overflow:overlay;
-        white-space: normal;
+        height: 600px;
+        font-size:18px;
+        margin:auto;
+        width: 90%;
+        left: 2.5%;
+        overflow-y:auto;
 
     }
 
     .contactBox{
         width: 300px;
+    }
+    
+    .portfolioBox{
+        width: 90%;
+        left: 2.5%;
+    }
+    .portfolioItem{
+
+        font-size: 19px;
+        padding: 2.5px;
+        white-space: normal;
+        overflow:scroll;
+    
     }
 
 }
