@@ -19,4 +19,21 @@ $(function(){
 
     });
 
+    $("#resume-view").on("click",function(){
+
+        var modal = $("#resumeModal");
+
+        modal.css("display", "block");
+        console.log("made it visible");
+
+    });
+
+    $("#closeResume").on("click",function(){
+
+        var modal = $("#resumeModal");
+
+        modal.css("display", "none");
+
+    });
+
 });

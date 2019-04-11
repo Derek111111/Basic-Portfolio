@@ -217,6 +217,27 @@ img{
 
 }
 
+#resumePDF{
+
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 95%;
+}
+
+#resumeModal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 25%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
 @media only screen and (max-width: 600px){
 
     #Name{
@@ -238,7 +259,7 @@ img{
         font-size:18px;
         margin:auto;
         width: 90%;
-        left: 2.5%;
+        left: 5%;
         overflow-y:auto;
 
     }
@@ -246,10 +267,12 @@ img{
     .contactBox{
         width: 300px;
     }
-    
-    .portfolioBox{
+
+    .portfoliobox{
         width: 90%;
-        left: 2.5%;
+        left: 5%;
+        height: 730px;
+        overflow-y:auto;
     }
     .portfolioItem{
 
